@@ -1,0 +1,103 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(45deg, #ff7f50, #ff6347, #ff1493); /* Gradient background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: white;
+}
+
+.App {
+  text-align: center;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Title Styles */
+.app-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ff1493; /* Bright pink color */
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Slight shadow to make it pop */
+  text-align: center;
+}
+
+/* Joke Container */
+.joke-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.joke-card {
+  background-color: #ffebcd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.joke-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.joke-text {
+  font-size: 20px;
+  font-weight: 500;
+  color: #333;
+  text-align: center;
+  line-height: 1.5;
+  transition: color 0.3s ease;
+}
+
+.joke-card:hover .joke-text {
+  color: #007bff;
+}
+
+/* Button Styling */
+.fetch-joke-btn {
+  background-color: #ff1493;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fetch-joke-btn:hover {
+  background-color: #e60073;
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.fetch-joke-btn:disabled {
+  background-color: #b0bec5;
+  cursor: not-allowed;
+}
+
+/* Loading Text Styles */
+.fetch-joke-btn:disabled {
+  background-color: #e3e3e3;
+  cursor: not-allowed;
+}
+
+/* Added Colorful Hover Effects */
+.joke-text:hover {
+  color: #ff6347; /* Tomato color when hovering over text */
+  cursor: pointer;
+}
